@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>For My Gadhiiiiiiiiiiiii ❤️</title>
+<meta name="description" content="A little birthday world made especially for my honey, baby, baccha.">
+<style>
+:root {
+  --bg:#120b10; --paper:#fff8f5; --ink:#2b1b22; --muted:#7d6871;
+  --rose:#e98a9a; --rose2:#f6c3cc; --gold:#e7b873; --white:#fff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--paper);font-family:Georgia,"Times New Roman",serif;line-height:1.65}
+body.locked{overflow:hidden}
+button,a{font:inherit}
+a{color:inherit}
+#gate{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;padding:24px;background:
+radial-gradient(circle at 50% 35%,rgba(233,138,154,.24),transparent 35%),#120b10;transition:.8s ease}
+#gate.hide{opacity:0;pointer-events:none}
+.gate-card{max-width:560px;text-align:center;padding:44px 28px;border:1px solid rgba(255,255,255,.15);border-radius:28px;background:rgba(255,255,255,.05);backdrop-filter:blur(10px);box-shadow:0 25px 80px rgba(0,0,0,.35)}
+.gate-card .tiny{letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#e7b873}
+.gate-card h1{font-size:clamp(42px,9vw,78px);line-height:.95;margin:16px 0;color:#fff8f5}
+.gate-card p{color:#dbcbd0}
+.enter{border:0;border-radius:999px;padding:14px 25px;background:var(--rose);color:#241219;cursor:pointer;font-weight:bold;box-shadow:0 10px 30px rgba(233,138,154,.25)}
+.heart{position:fixed;bottom:-30px;font-size:18px;opacity:.0;animation:float 8s linear infinite;pointer-events:none;z-index:2}
+@keyframes float{0%{transform:translateY(0) rotate(0);opacity:0}10%{opacity:.6}90%{opacity:.25}100%{transform:translateY(-110vh) rotate(25deg);opacity:0}}
+.hero{min-height:100vh;display:grid;place-items:center;position:relative;overflow:hidden;padding:40px 18px}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(18,11,16,.15),rgba(18,11,16,.92)),url("assets/collage.png") center/cover;filter:blur(2px);transform:scale(1.04);opacity:.48}
+.hero-inner{position:relative;z-index:1;max-width:850px;text-align:center}
+.kicker{letter-spacing:.28em;text-transform:uppercase;font-size:12px;color:var(--gold)}
+h1{font-size:clamp(58px,12vw,120px);line-height:.86;margin:18px 0 24px;letter-spacing:-.04em}
+.subtitle{font-size:clamp(19px,3vw,28px);max-width:680px;margin:auto;color:#f6e9ed}
+.scroll{display:inline-block;margin-top:35px;text-decoration:none;border:1px solid rgba(255,255,255,.25);padding:10px 18px;border-radius:999px;color:#fff}
+section{padding:90px 18px}
+.light{background:var(--paper);color:var(--ink)}
+.dark{background:var(--bg)}
+.container{width:min(1050px,100%);margin:auto}
+.section-label{color:var(--rose);text-transform:uppercase;letter-spacing:.22em;font-size:11px;font-weight:bold}
+h2{font-size:clamp(38px,7vw,70px);line-height:1;margin:12px 0 22px;letter-spacing:-.03em}
+.lead{font-size:20px;color:var(--muted);max-width:720px}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+.story img{width:100%;max-height:720px;object-fit:cover;border-radius:24px;box-shadow:0 20px 60px rgba(0,0,0,.18)}
+.timeline{margin-top:45px;display:grid;gap:22px}
+.event{display:grid;grid-template-columns:120px 1fr;gap:20px;padding:22px 0;border-top:1px solid rgba(43,27,34,.12)}
+.event .date{font-weight:bold;color:#b76c7c}
+.call-card{margin:50px 0 0;padding:40px;border-radius:28px;background:#1c1118;color:#fff;text-align:center;box-shadow:0 20px 70px rgba(0,0,0,.22)}
+.timer{font-size:clamp(48px,10vw,92px);font-weight:bold;letter-spacing:.05em;color:var(--rose2)}
+.small{color:#cbb9c0}
+.reasons{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:40px}
+.reason{display:flex;gap:16px;align-items:flex-start;padding:18px;border:1px solid rgba(43,27,34,.1);border-radius:18px;background:#fff}
+.reason span{font-size:12px;color:#b76c7c;letter-spacing:.1em;padding-top:4px}
+.reason p{margin:0;color:#000}
+.gallery{columns:2 300px;column-gap:16px;margin-top:38px}
+.photo{margin:0 0 16px;break-inside:avoid;position:relative}
+.photo img{width:100%;display:block;border-radius:20px}
+.photo figcaption{padding:10px 3px 5px;color:#d8c8ce;font-size:14px}
+.cute{background:linear-gradient(135deg,#24131b,#120b10)}
+.report{max-width:700px;margin:40px auto 0;border:1px solid rgba(255,255,255,.16);border-radius:24px;padding:30px;background:rgba(255,255,255,.04)}
+.report-row{display:flex;justify-content:space-between;gap:20px;padding:10px 0;border-bottom:1px dashed rgba(255,255,255,.13)}
+.report-row:last-child{border-bottom:0}
+.badge{color:#2b1b22;background:var(--rose2);padding:4px 9px;border-radius:999px;font-size:12px;font-weight:bold}
+.letter{max-width:760px;margin:35px auto 0;font-size:20px}
+.signature{margin-top:35px;font-size:28px;color:var(--rose)}
+.song{margin-top:38px;border-radius:24px;padding:30px;background:linear-gradient(135deg,#fff,#fff0f3);color:var(--ink);display:flex;align-items:center;justify-content:space-between;gap:20px}
+.song strong{font-size:24px}
+.song a{display:inline-block;background:#2b1b22;color:#fff;padding:11px 18px;border-radius:999px;text-decoration:none;white-space:nowrap}
+.future{text-align:center;min-height:70vh;display:grid;place-items:center}
+.future h2{max-width:800px;margin-left:auto;margin-right:auto}
+.footer{padding:40px 18px;text-align:center;color:#8e7880;font-size:13px}
+@media(max-width:720px){
+.story{grid-template-columns:1fr}
+.reasons{grid-template-columns:1fr}
+.event{grid-template-columns:90px 1fr}
+.song{flex-direction:column;align-items:flex-start}
+}
+</style>
+</head>
+<body class="locked">\n\n
+<audio id="birthdaySong" src="assets/ye-fitoor-mera.m4a" loop preload="auto"></audio>
+<button id="musicButton" type="button" onclick="toggleSong()" aria-label="Play or pause birthday song"
+style="position:fixed;right:16px;bottom:16px;z-index:1200;border:0;border-radius:999px;padding:12px 16px;background:#e98a9a;color:#241219;font-weight:bold;box-shadow:0 8px 24px #0005;cursor:pointer">
+🎵 Play our song
+</button>
+
+
+
+<div id="gate">
+  <div class="gate-card">
+    <div class="tiny">A little world made for one very special girl</div>
+    <h1>Gadhiiiiiiiiiiiii ❤️</h1>
+    <p>Honey. Baby. Baccha. Birthday girl.<br>There is one tiny birthday surprise waiting for you.</p>
+    <button class="enter" onclick="openGift()">Open your birthday surprise ✨</button>
+  </div>
+</div>
+
+<main>
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <div class="kicker">16 October 2026 · made with love</div>
+    <h1>For my<br>Gadhiiiiiiiiiiiii ❤️</h1>
+    <p class="subtitle">From a random Snapchat meeting to becoming my honey, my baby, my baccha… somehow, you became my favorite person.</p>
+    <a class="scroll" href="#story">Start our little story ↓</a>
+  </div>
+</section>
+
+<section class="light" id="story">
+  <div class="container">
+    <div class="story">
+      <div>
+        <div class="section-label">How it started</div>
+        <h2>One random Snapchat conversation.</h2>
+        <p class="lead">And then 21 December 2025 happened. What started on a screen slowly became something that mattered way beyond the screen.</p>
+        <div class="timeline">
+          <div class="event"><div class="date">SNAPCHAT</div><div>Where two people who didn't know what was coming next first found each other.</div></div>
+          <div class="event"><div class="date">21 DEC 2025</div><div>The date our story officially became <em>our</em> story. ❤️</div></div>
+          <div class="event"><div class="date">FIRST CALL</div><div>A call that somehow lasted <strong>3 hours and 36 minutes</strong>… and still didn't feel long enough.</div></div>
+        </div>
+      </div>
+      <img src="assets/selfie.png" alt="A photo of us together">
+    </div>
+
+    <div class="call-card">
+      <div class="small">THE CALL I STILL REMEMBER</div>
+      <div class="timer">03:36:00</div>
+      <p>Three hours. Thirty-six minutes. One conversation. A memory I never want to lose.</p>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="container">
+    <div class="section-label">16 little reasons</div>
+    <h2>Why I love you.</h2>
+    <p class="lead" style="color:#cdbbc2">Sixteen reasons. And honestly, I still ran out of numbers.</p>
+    <div class="reasons"><div class="reason"><span>01</span><p>Your eyes — the ones I could probably stare at forever.</p></div>
+<div class="reason"><span>02</span><p>Your hair — yes, I notice it. A LOT.</p></div>
+<div class="reason"><span>03</span><p>Your kindness, especially in the little things.</p></div>
+<div class="reason"><span>04</span><p>The caring side of you that makes me feel safe and loved.</p></div>
+<div class="reason"><span>05</span><p>The way you can make an ordinary conversation feel special.</p></div>
+<div class="reason"><span>06</span><p>Your loving side that I never want to take for granted.</p></div>
+<div class="reason"><span>07</span><p>Your voice — especially when we end up talking for way too long.</p></div>
+<div class="reason"><span>08</span><p>How comfortable I feel being completely myself with you.</p></div>
+<div class="reason"><span>09</span><p>The tiny things you do that you probably don&#x27;t even realize I notice.</p></div>
+<div class="reason"><span>10</span><p>How you somehow make distance feel a little smaller.</p></div>
+<div class="reason"><span>11</span><p>The memories we&#x27;ve already made together.</p></div>
+<div class="reason"><span>12</span><p>The way &#x27;honey&#x27;, &#x27;baby&#x27; and &#x27;baccha&#x27; became our little language.</p></div>
+<div class="reason"><span>13</span><p>The fact that a random Snapchat meeting became something so important to me.</p></div>
+<div class="reason"><span>14</span><p>How easily you can make me smile.</p></div>
+<div class="reason"><span>15</span><p>The future memories I already want to make with you.</p></div>
+<div class="reason"><span>16</span><p>And finally... simply you. I wouldn&#x27;t replace you with anyone.</p></div></div>
+  </div>
+</section>
+
+<section class="light">
+  <div class="container">
+    <div class="section-label">Our little gallery</div>
+    <h2>Us, in little pieces.</h2>
+    <p class="lead">Some pictures are just pictures. These are little reminders of moments I wish I could keep forever.</p>
+    <div class="gallery"><figure class="photo"><img src="assets/collage.png" alt="Some of my favorite versions of us."><figcaption>Some of my favorite versions of us.</figcaption></figure>
+<figure class="photo"><img src="assets/selfie.png" alt="Just us, being us."><figcaption>Just us, being us.</figcaption></figure>
+<figure class="photo"><img src="assets/outdoor.png" alt="One of those moments I wish I could pause."><figcaption>One of those moments I wish I could pause.</figcaption></figure>
+<figure class="photo"><img src="assets/sunlight.png" alt="You, being effortlessly you."><figcaption>You, being effortlessly you.</figcaption></figure>
+<figure class="photo"><img src="assets/eyes.jpg" alt="And those eyes... ❤️"><figcaption>And those eyes... ❤️</figcaption></figure></div>
+  </div>
+</section>
+
+<section class="cute dark">
+  <div class="container">
+    <div class="section-label">Extremely official</div>
+    <h2>The Gadhiiiiiiiiiiiii Report 😂</h2>
+    <div class="report">
+      <div class="report-row"><span>Official name</span><strong>Gadhiiiiiiiiiiiii</strong></div>
+      <div class="report-row"><span>Known aliases</span><strong>Honey · Baby · Baccha</strong></div>
+      <div class="report-row"><span>Special talent</span><strong>Making me miss you</strong></div>
+      <div class="report-row"><span>Major offence</span><strong>Being cute for no reason</strong></div>
+      <div class="report-row"><span>Additional offence</span><strong>Stealing my attention</strong></div>
+      <div class="report-row"><span>Sentence</span><span class="badge">Lifetime with me ❤️</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="light">
+  <div class="container">
+    <div class="section-label">Our song</div>
+    <h2>Ye Fitoor Mera 🎵</h2>
+    <p class="lead">If this page had a soundtrack, this would be it.</p>
+    <div class="song">
+      <div><strong>Ye Fitoor Mera</strong><br><span style="color:#7d6871">For the girl whose eyes, hair, kindness and loving heart I can't stop thinking about.</span></div>
+      <a href="https://www.youtube.com/results?search_query=Ye+Fitoor+Mera" target="_blank" rel="noopener">Play the song ↗</a>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="container">
+    <div class="section-label">A letter</div>
+    <h2>For my honey, my baby, my baccha.</h2>
+    <div class="letter">
+      <p>Happy birthday, my love. ❤️</p>
+      <p>Sometimes I still think about how strange and beautiful it is that we met on Snapchat. Out of all the conversations and all the people in the world, somehow I found you.</p>
+      <p>I love your eyes. I love your hair. But more than all of that, I love the kind, caring and loving person you are. Those are the things that make you <em>you</em>, and those are the things I never want to take for granted.</p>
+      <p>I still remember our first long call — 3 hours and 36 minutes. It was just a call, but it became one of my favorite memories because it was one of the first times I realized how easy it was to lose track of time with you.</p>
+      <p>I wish I could be beside you today, annoy you in person, make you laugh, give you a proper birthday hug and celebrate with you. Until I can do that, I hope this little surprise reminds you that even when we're far apart, you are still very close to my heart.</p>
+      <p>So today, I just want you to know: I'm grateful for you, I'm proud to have you in my life, and I'm looking forward to all the memories we haven't made yet.</p>
+      <p>Happy birthday, Gadhiiiiiiiiiiiii. ❤️</p>
+      <div class="signature">— Your honey, baby, baccha's favorite idiot ❤️</div>
+    </div>
+  </div>
+</section>
+
+<section class="future light">
+  <div class="container">
+    <div class="section-label">Not the end</div>
+    <h2>This is only one birthday.</h2>
+    <p class="lead" style="margin:0 auto">There are still so many calls to have, places to go, photos to take, stupid jokes to make, birthdays to celebrate, and memories waiting for us.</p>
+    <p style="font-size:24px;margin-top:38px">Someday, we'll celebrate one of these birthdays in the same place. Until then… ❤️</p>
+    <div id="together" style="margin-top:30px;color:#b76c7c;font-weight:bold"></div>
+  </div>
+</section>
+
+<div class="footer">Made with love for Gadhiiiiiiiiiiiii · 16 October 2026 ❤️</div>
+</main>
+
+<script>
+async function startSong(){
+  const song = document.getElementById('birthdaySong');
+  const button = document.getElementById('musicButton');
+  try {
+    await song.play();
+    button.textContent = '🎵 Pause song';
+  } catch (error) {
+    button.textContent = '🎵 Tap to play song';
+  }
+}
+async function toggleSong(){
+  const song = document.getElementById('birthdaySong');
+  const button = document.getElementById('musicButton');
+  if (!song.paused) {
+    song.pause();
+    button.textContent = '🎵 Play our song';
+    return;
+  }
+  await startSong();
+}
+function openGift(){
+  document.getElementById('gate').classList.add('hide');
+  document.body.classList.remove('locked');
+  window.scrollTo(0,0);
+  makeHearts();
+  // Playback is requested inside the click handler because browsers often block autoplay.
+  startSong();
+}
+function makeHearts(){
+  for(let i=0;i<16;i++){
+    const h=document.createElement('div');
+    h.className='heart';
+    h.textContent=['♥','♡','❤','✦'][Math.floor(Math.random()*4)];
+    h.style.left=(Math.random()*100)+'%';
+    h.style.animationDelay=(Math.random()*5)+'s';
+    h.style.animationDuration=(6+Math.random()*5)+'s';
+    document.body.appendChild(h);
+  }
+}
+function updateTogether(){
+  const start=new Date('2025-12-21T00:00:00');
+  const now=new Date();
+  const days=Math.max(0,Math.floor((now-start)/(1000*60*60*24)));
+  document.getElementById('together').textContent=days+' days of us so far ❤️';
+}
+updateTogether();
+</script>
+</body>
+</html>
